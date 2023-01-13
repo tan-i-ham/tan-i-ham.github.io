@@ -4,15 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>Contribute to a open-source project! | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://tan-i-ham.github.io/index.html">
+  <meta name="description" content="ObjectiveIntroducing how can a beginner contribute to the first open source project. Why do I want to contribute to open-source projects?First, I want to learn the tools and library I had used before">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Contribute to a open-source project!">
+<meta property="og:url" content="https://tan-i-ham.github.io/2023/01/12/contribute-open-source/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ObjectiveIntroducing how can a beginner contribute to the first open source project. Why do I want to contribute to open-source projects?First, I want to learn the tools and library I had used before">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tan-i-ham.github.io/images/open-source-1.svg">
+<meta property="article:published_time" content="2023-01-13T02:36:57.000Z">
+<meta property="article:modified_time" content="2023-01-13T02:59:56.234Z">
 <meta property="article:author" content="Yi-Han Chen">
+<meta property="article:tag" content="open-source, k8s">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tan-i-ham.github.io/images/open-source-1.svg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +76,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-contribute-open-source" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-contribute-open-source" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/01/12/contribute-open-source/" class="article-date">
   <time class="dt-published" datetime="2023-01-13T02:36:57.000Z" itemprop="datePublished">2023-01-12</time>
@@ -84,8 +89,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/01/12/contribute-open-source/">Contribute to a open-source project!</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Contribute to a open-source project!
     </h1>
   
 
@@ -131,85 +136,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-jib" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/04/18/jib/" class="article-date">
-  <time class="dt-published" datetime="2020-04-18T20:17:33.000Z" itemprop="datePublished">2020-04-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/04/18/jib/">Jib, a tool for containerizing your Java app</a>
-    </h1>
+    <a href="/2020/04/18/jib/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Jib, a tool for containerizing your Java app</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h2><p>Introduce what jib is, how to use jib to build docker image of Spring Boot app</p>
-<h2 id="Requirement-amp-Prerequisites"><a href="#Requirement-amp-Prerequisites" class="headerlink" title="Requirement &amp; Prerequisites"></a>Requirement &amp; Prerequisites</h2><h3 id="Machine"><a href="#Machine" class="headerlink" title="Machine"></a>Machine</h3><ul>
-<li>Java 8+</li>
-<li>Docker runtime</li>
-<li>Docker hub account or other registry sapce</li>
-</ul>
-<h3 id="Human"><a href="#Human" class="headerlink" title="Human"></a>Human</h3><ul>
-<li>Basic Spring Boot understanding</li>
-<li>Basic Docker immae, container knowledge</li>
-</ul>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Jib is</p>
-<ul>
-<li>a tool to help you containerize your java app without having docker deamon and Dockerfile</li>
-<li>an open source project by Google, <a target="_blank" rel="noopener" href="https://github.com/GoogleContainerTools/jib">jib github repo</a></li>
-<li>a plugin supported for both gradle and maven <img src="/images/jib-1.png"></li>
-</ul>
-<h3 id="What-is-the-difference-from-common-Dockerfile-build-flow"><a href="#What-is-the-difference-from-common-Dockerfile-build-flow" class="headerlink" title="What is the difference from common Dockerfile build flow?"></a>What is the difference from common Dockerfile build flow?</h3><p>a blog post from GCP Blog describes very clearly (image from: <a target="_blank" rel="noopener" href="https://cloudplatform.googleblog.com/2018/07/introducing-jib-build-java-docker-images-better.html">Introducing Jib — build Java Docker images better</a>)<br>— highly recommend to read this blog post if you want learn jib more —</p>
-<p><img src="/images/jib-2.png"></p>
-<h3 id="Demo-with-Spring-Boot-Greeting-App"><a href="#Demo-with-Spring-Boot-Greeting-App" class="headerlink" title="Demo with Spring Boot Greeting App"></a>Demo with Spring Boot Greeting App</h3><p>clone this repo beforehand: <a target="_blank" rel="noopener" href="https://github.com/spring-guides/gs-rest-service">Spring Boot Guides - Building a RESTful Web Service</a></p>
-<p>add jib plugins <code>build.gradle</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">plugins &#123;  </span><br><span class="line">        id &#x27;org.springframework.boot&#x27; version &#x27;2.2.0.RELEASE&#x27;  </span><br><span class="line">        id &#x27;io.spring.dependency-management&#x27; version &#x27;1.0.8.RELEASE&#x27;  </span><br><span class="line">        id &#x27;java&#x27;  </span><br><span class="line">        // add plugin  </span><br><span class="line">        id &#x27;com.google.cloud.tools.jib&#x27; version &#x27;2.2.0&#x27;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//  other dependencires, scripts ...  </span><br></pre></td></tr></table></figure>
-
-
-<h3 id="Build-image-without-dokcer-deamon-authentication-of-image-registry-is-necessary"><a href="#Build-image-without-dokcer-deamon-authentication-of-image-registry-is-necessary" class="headerlink" title="Build image without dokcer deamon (authentication of image registry is necessary)"></a>Build image without dokcer deamon (authentication of image registry is necessary)</h3><p>Default is docker hub registry.<br>But Azure Container Registry (ACR) , Google Container Registry (GCR) and Amazon Elastic Container Registry (ECR) are all supported</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># login  </span><br><span class="line">$ docker login  </span><br><span class="line">Username: $&#123;docker hub username&#125;  </span><br><span class="line">Password:  </span><br><span class="line">Login Succeeded  </span><br><span class="line">  </span><br><span class="line"># build and push image automatically  </span><br><span class="line">$ ./gradlew jib --image=$&#123;docker hub username&#125;/spring-service-by-jib  </span><br></pre></td></tr></table></figure>
-
-<h3 id="Build-image-with-dokcer-deamon-and-run-the-container"><a href="#Build-image-with-dokcer-deamon-and-run-the-container" class="headerlink" title="Build image with dokcer deamon, and run the container"></a>Build image with dokcer deamon, and run the container</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># build image  </span><br><span class="line">$ ./gradlew jibDockerBuild  </span><br><span class="line"></span><br><span class="line"># check images  </span><br><span class="line">$ docker images  </span><br><span class="line">REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE  </span><br><span class="line">rest-service              0.0.1-SNAPSHOT      fc64280956f4        50 years ago        143MB  </span><br><span class="line"></span><br><span class="line"># run the container   </span><br><span class="line">$ docker run -p 8080:8080 -p 8080:8080 rest-service:0.0.1-SNAPSHOT  </span><br></pre></td></tr></table></figure>
-<p>make a request by curl command</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ curl -s http://localhost:8080/greeting  </span><br><span class="line">&#123;&quot;id&quot;:6,&quot;content&quot;:&quot;Hello, World!&quot;&#125;  </span><br><span class="line">  </span><br><span class="line">$ curl -s http://localhost:8080/greeting\\?name=john  </span><br><span class="line">&#123;&quot;id&quot;:7,&quot;content&quot;:&quot;Hello, john!&quot;&#125;  </span><br></pre></td></tr></table></figure>
-
-<p>Yeah!!! Building a java app image is so easy!!!</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Through this article, we can see how easy it is to build an java app image without Dockerfile or Docker deamon.</p>
-<p>The reason I like jib is, I don’t have to install docker on the build server, like Jenkins, and I still can build an image and push to the target image registry.</p>
-<p>In our team, we have already lots of build jar file projects on Jenkins server, and I don’t want to ruin it or take more time to install it. That’s why I seek for the solution and use jib instead.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://tan-i-ham.github.io/2020/04/18/jib/" data-id="clctlhcvk0000paqcb2za1b17" data-title="Jib, a tool for containerizing your Java app" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DevOps/" rel="tag">DevOps</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
