@@ -17,20 +17,20 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tan-i-ham.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"tan-i-ham.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="ObjectiveIntroduce what jib is, how to use jib to build docker image of Spring Boot app Requirement &amp; PrerequisitesMachine Java 8+ Docker runtime Docker hub account or other registry sapce  Human">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jib, a tool for containerizing your Java app">
 <meta property="og:url" content="https://tan-i-ham.github.io/2020/04/18/jib/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Yi-Han Chen&#39;s blog">
 <meta property="og:description" content="ObjectiveIntroduce what jib is, how to use jib to build docker image of Spring Boot app Requirement &amp; PrerequisitesMachine Java 8+ Docker runtime Docker hub account or other registry sapce  Human">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://tan-i-ham.github.io/images/jib-1.png">
 <meta property="og:image" content="https://tan-i-ham.github.io/images/jib-2.png">
 <meta property="article:published_time" content="2020-04-18T20:17:33.000Z">
-<meta property="article:modified_time" content="2023-01-12T21:32:03.278Z">
+<meta property="article:modified_time" content="2023-01-14T19:34:30.100Z">
 <meta property="article:author" content="Yi-Han Chen">
 <meta property="article:tag" content="DevOps">
 <meta name="twitter:card" content="summary">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>Jib, a tool for containerizing your Java app | Hexo</title>
+  <title>Jib, a tool for containerizing your Java app | Yi-Han Chen's blog</title>
   
 
 
@@ -100,7 +100,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">Yi-Han Chen's blog</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -119,6 +119,11 @@
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -163,7 +168,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Yi-Han Chen's blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -184,7 +189,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-12 16:32:03" itemprop="dateModified" datetime="2023-01-12T16:32:03-05:00">2023-01-12</time>
+                <time title="Modified: 2023-01-14 14:34:30" itemprop="dateModified" datetime="2023-01-14T14:34:30-05:00">2023-01-14</time>
               </span>
 
           
@@ -208,6 +213,8 @@
 <li>Basic Spring Boot understanding</li>
 <li>Basic Docker immae, container knowledge</li>
 </ul>
+<span id="more"></span>
+
 <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Jib is</p>
 <ul>
 <li>a tool to help you containerize your java app without having docker deamon and Dockerfile</li>
@@ -331,7 +338,7 @@
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -364,7 +371,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Yi-Han Chen</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
   </div>
 
         
@@ -390,7 +397,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
